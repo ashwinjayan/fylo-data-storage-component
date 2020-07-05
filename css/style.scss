@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+//Font
+$font: 'Raleway', sans-serif;
+$bold: 700;
+$regular: 400;
+
+//Colors
+$palr-blue: hsl(243, 100%, 93%);
+$gray-blue: hsl(229, 7%, 55%);
+$dark-blue: hsl(228, 56%, 26%);
+$very-dar-blue: hsl(229, 57%, 11%);
+
+body {
+    font-size: 14px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
