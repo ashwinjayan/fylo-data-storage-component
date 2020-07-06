@@ -6,13 +6,65 @@ $bold: 700;
 $regular: 400;
 
 //Colors
-$palr-blue: hsl(243, 100%, 93%);
+$progress-bar: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+$pale-blue: hsl(243, 100%, 93%);
 $gray-blue: hsl(229, 7%, 55%);
 $dark-blue: hsl(228, 56%, 26%);
 $very-dar-blue: hsl(229, 57%, 11%);
 
 body {
     font-size: 14px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/bg-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: $font;
+    font-weight: $regular;
+    color: $pale-blue;
+    display: grid;
+    grid-template-rows: 95% 5%;
+
+    @media only screen and (min-width: 900px) {
+      background-color: $very-dar-blue;
+      background-image: none;
+    }
+}
+
+.bg-desktop {
+  display: none;
+
+  @media only screen and (min-width: 900px) {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left top;
+    }
+  }
+}
+
+.container {
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.fylo-header {
+  background-color: $dark-blue;
+  border-top-right-radius: 50%;
 }
 
 .attribution {
