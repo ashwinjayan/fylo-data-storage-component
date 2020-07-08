@@ -68,40 +68,66 @@ body {
 .fylo-header {
   background-color: $dark-blue;
   border-radius: 5%;
-  border-top-right-radius: 45%;
-  min-width: 12em;
-  height: 6em;
+  border-top-right-radius: 7em;
+  width: 14em;
+  height: 7em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1em;
   padding: 2em;
-  position: relative;
+  gap: 0.7em;
 
-  box-shadow: 0px 0px 1px rgba($color: hsl(229, 57%, 11%), $alpha: 0.2);
+  box-shadow: 0px 0px 4px rgba($color: hsl(229, 57%, 11%), $alpha: 0.3);
 }
 
 .logo {
   & svg {
-    scale: 0.7;
-    position: absolute;
-    top: 2em;
-    left: 0.8em;
+    scale: 0.8;
   }
 }
 
 .usage-stats {
   background-color: $dark-blue;
   border-radius: 5%;
+  width: 18.5em;
+  height: 9.5em;
+  padding: 2em;
+  font-size: 0.8em;
+
+  box-shadow: 0px 0px 4px rgba($color: hsl(229, 57%, 11%), $alpha: 0.3);
+}
+
+.notification-info {
+  & span {
+    font-weight: 700;
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: $very-dark-blue;
+  height: 8px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+
+  & span {
+    color: $progress-bar;
+    width: 80%;
+
+  }
+
+  & span::before {
+    content: " ";
+  }
 }
 
 .actions {
   display: flex;
   gap: 0.6em;
-  position: absolute;
-  top: 5.5em;
-  left: 2em;
+  margin-left: 0.7em;
 
   & .action {
     background-color: $very-dark-blue;

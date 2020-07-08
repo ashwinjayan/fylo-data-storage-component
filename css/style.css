@@ -76,9 +76,9 @@ body {
 .fylo-header {
   background-color: #1d2c67;
   border-radius: 5%;
-  border-top-right-radius: 45%;
-  min-width: 12em;
-  height: 6em;
+  border-top-right-radius: 7em;
+  width: 14em;
+  height: 7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,23 +92,52 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 1em;
   padding: 2em;
-  position: relative;
-  -webkit-box-shadow: 0px 0px 1px rgba(12, 18, 44, 0.2);
-          box-shadow: 0px 0px 1px rgba(12, 18, 44, 0.2);
+  gap: 0.7em;
+  -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
+          box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
 }
 
 .logo svg {
-  scale: 0.7;
-  position: absolute;
-  top: 2em;
-  left: 0.8em;
+  scale: 0.8;
 }
 
 .usage-stats {
   background-color: #1d2c67;
   border-radius: 5%;
+  width: 18.5em;
+  height: 9.5em;
+  padding: 2em;
+  font-size: 0.8em;
+  -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
+          box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
+}
+
+.notification-info span {
+  font-weight: 700;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #0c122c;
+  height: 8px;
+  border-radius: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+}
+
+.progress-bar span {
+  color: linear-gradient(90deg, #ffa399, #ff4d97);
+  width: 80%;
+}
+
+.progress-bar span::before {
+  content: " ";
 }
 
 .actions {
@@ -116,9 +145,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 0.6em;
-  position: absolute;
-  top: 5.5em;
-  left: 2em;
+  margin-left: 0.7em;
 }
 
 .actions .action {
