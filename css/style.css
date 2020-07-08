@@ -61,11 +61,84 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 1em;
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .fylo-header {
   background-color: #1d2c67;
-  border-top-right-radius: 50%;
+  border-radius: 5%;
+  border-top-right-radius: 45%;
+  min-width: 12em;
+  height: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1em;
+  padding: 2em;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 1px rgba(12, 18, 44, 0.2);
+          box-shadow: 0px 0px 1px rgba(12, 18, 44, 0.2);
+}
+
+.logo svg {
+  scale: 0.7;
+  position: absolute;
+  top: 2em;
+  left: 0.8em;
+}
+
+.usage-stats {
+  background-color: #1d2c67;
+  border-radius: 5%;
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.6em;
+  position: absolute;
+  top: 5.5em;
+  left: 2em;
+}
+
+.actions .action {
+  background-color: #0c122c;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.actions .action svg {
+  scale: 0.8;
 }
 
 .attribution {

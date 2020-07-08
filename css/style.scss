@@ -10,7 +10,7 @@ $progress-bar: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 $pale-blue: hsl(243, 100%, 93%);
 $gray-blue: hsl(229, 7%, 55%);
 $dark-blue: hsl(228, 56%, 26%);
-$very-dar-blue: hsl(229, 57%, 11%);
+$very-dark-blue: hsl(229, 57%, 11%);
 
 body {
     font-size: 14px;
@@ -27,7 +27,7 @@ body {
     grid-template-rows: 95% 5%;
 
     @media only screen and (min-width: 900px) {
-      background-color: $very-dar-blue;
+      background-color: $very-dark-blue;
       background-image: none;
     }
 }
@@ -58,20 +58,71 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  gap: 1em;
   
+  @media only screen and (min-width: 900px) {
+    flex-direction: row;
+  }
 }
 
 .fylo-header {
   background-color: $dark-blue;
-  border-top-right-radius: 50%;
+  border-radius: 5%;
+  border-top-right-radius: 45%;
+  min-width: 12em;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 2em;
+  position: relative;
+
+  box-shadow: 0px 0px 1px rgba($color: hsl(229, 57%, 11%), $alpha: 0.2);
+}
+
+.logo {
+  & svg {
+    scale: 0.7;
+    position: absolute;
+    top: 2em;
+    left: 0.8em;
+  }
+}
+
+.usage-stats {
+  background-color: $dark-blue;
+  border-radius: 5%;
+}
+
+.actions {
+  display: flex;
+  gap: 0.6em;
+  position: absolute;
+  top: 5.5em;
+  left: 2em;
+
+  & .action {
+    background-color: $very-dark-blue;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & svg {
+      scale: 0.8;
+    }
+  }
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
+  font-size: 11px;
+  text-align: center;
+}
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
