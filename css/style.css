@@ -61,7 +61,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.5em;
 }
 
 @media only screen and (min-width: 900px) {
@@ -93,7 +92,6 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 2em;
-  gap: 1.1em;
   -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
           box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
 }
@@ -106,8 +104,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.1em;
-  padding-left: 0.8em;
+  margin-top: 1.2em;
 }
 
 .actions .action {
@@ -124,6 +121,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 0.8em;
 }
 
 .usage-stats {
@@ -140,7 +138,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1em;
+  margin-left: 2em;
   -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
           box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
 }
@@ -169,6 +167,7 @@ body {
 }
 
 .progress-bar {
+  margin-top: 1em;
   width: 100%;
   background-color: #0c122c;
   height: 14px;
@@ -229,7 +228,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.7em;
   margin: 0 auto;
   font-weight: 700;
   text-transform: uppercase;
@@ -246,13 +244,14 @@ body {
 .notification span {
   font-size: 2.5em;
   color: #0c122c;
+  margin-right: 0.3em;
 }
 
 @media only screen and (min-width: 900px) {
   .notification {
     position: absolute;
     top: -50px;
-    right: 22px;
+    right: 25px;
     margin: 0;
   }
   .notification::after {
