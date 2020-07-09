@@ -75,10 +75,10 @@ body {
 
 .fylo-header {
   background-color: #1d2c67;
-  border-radius: 5%;
+  border-radius: 1em;
   border-top-right-radius: 7em;
-  width: 14em;
-  height: 7em;
+  width: 18.5em;
+  height: 10em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,65 +93,27 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 2em;
-  gap: 0.7em;
+  gap: 1.1em;
   -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
           box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
 }
 
-.logo svg {
-  scale: 0.8;
-}
-
-.usage-stats {
-  background-color: #1d2c67;
-  border-radius: 5%;
-  width: 18.5em;
-  height: 9.5em;
-  padding: 2em;
-  font-size: 0.8em;
-  -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
-          box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
-}
-
-.notification-info span {
-  font-weight: 700;
-}
-
-.progress-bar {
-  width: 100%;
-  background-color: #0c122c;
-  height: 8px;
-  border-radius: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2px;
-}
-
-.progress-bar span {
-  color: linear-gradient(90deg, #ffa399, #ff4d97);
-  width: 80%;
-}
-
-.progress-bar span::before {
-  content: " ";
+.logo {
+  padding-left: 1em;
 }
 
 .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0.6em;
-  margin-left: 0.7em;
+  gap: 1.1em;
+  padding-left: 0.8em;
 }
 
 .actions .action {
   background-color: #0c122c;
-  width: 2.5em;
-  height: 2.5em;
+  width: 3.2em;
+  height: 3.2em;
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,8 +126,138 @@ body {
           align-items: center;
 }
 
-.actions .action svg {
-  scale: 0.8;
+.usage-stats {
+  background-color: #1d2c67;
+  border-radius: 1em;
+  width: 18.5em;
+  height: 8em;
+  padding: 2em;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
+          box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
+}
+
+@media only screen and (min-width: 900px) {
+  .usage-stats {
+    width: 30em;
+    margin-top: 55px;
+    height: 6em;
+    position: relative;
+  }
+}
+
+.notification-info {
+  margin: 0 auto;
+}
+
+.notification-info span {
+  font-weight: 700;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #0c122c;
+  height: 14px;
+  border-radius: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px;
+}
+
+.progress-bar span {
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(90deg, #ffa399, #ff4d97);
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 1.8px;
+  height: 9px;
+  border-radius: 80px;
+}
+
+.progress-bar span::before {
+  content: " ";
+  background-color: white;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  right: 2px;
+}
+
+.progress-bar-tips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+}
+
+.notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7em;
+  margin: 0 auto;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #dddbff;
+  color: #848794;
+  border-radius: 1em;
+  width: 12em;
+  min-height: 5em;
+  margin-top: -0.4em;
+  -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
+          box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
+}
+
+.notification span {
+  font-size: 2.5em;
+  color: #0c122c;
+}
+
+@media only screen and (min-width: 900px) {
+  .notification {
+    position: absolute;
+    top: -50px;
+    right: 22px;
+    margin: 0;
+  }
+  .notification::after {
+    content: " ";
+    position: absolute;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #dddbff;
+    bottom: -16px;
+    right: 0;
+  }
 }
 
 .attribution {
@@ -174,6 +266,6 @@ body {
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #848794;
 }
 /*# sourceMappingURL=style.css.map */
