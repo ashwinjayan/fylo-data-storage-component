@@ -237,7 +237,7 @@ body {
   border-radius: 1em;
   width: 12em;
   min-height: 5em;
-  margin-top: -0.4em;
+  margin-top: 0.6em;
   -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
           box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
 }
