@@ -109,7 +109,7 @@ body {
   font-size: 1em;
   display: flex;
   flex-direction: column;
-  margin-left: 2em;
+  margin-top: 2em;
 
   box-shadow: 0px 0px 4px rgba($color: hsl(229, 57%, 11%), $alpha: 0.3);
 
@@ -118,6 +118,7 @@ body {
     margin-top: 55px;
     height: 6em;
     position: relative;
+    margin-left: 2em;
   }
 }
 

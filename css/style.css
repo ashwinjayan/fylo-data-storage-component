@@ -138,7 +138,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 2em;
+  margin-top: 2em;
   -webkit-box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
           box-shadow: 0px 0px 4px rgba(12, 18, 44, 0.3);
 }
@@ -149,6 +149,7 @@ body {
     margin-top: 55px;
     height: 6em;
     position: relative;
+    margin-left: 2em;
   }
 }
 
